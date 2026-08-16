@@ -160,11 +160,23 @@ body {
   color: var(--text-primary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding: 8px 16px;
+  padding: 8px 36px 8px 16px; /* Da espaço para a seta do dropdown */
   font-family: var(--font-sans);
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
+  
+  /* Seta customizada premium */
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f1f2f6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+.light-theme .custom-select {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232f3542' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 }
 
 .custom-select:hover {
@@ -756,17 +768,28 @@ body {
     width: auto;
   }
   
-  #restart-lesson, #next-lesson {
-    flex: 1 1 calc(50% - 4px);
+  #restart-lesson {
+    flex: 2 1 120px;
     font-size: 0.85rem;
     padding: 8px 12px;
+    height: 40px;
+    justify-content: center;
   }
   
-  #toggle-sound, #toggle-theme {
-    flex: 1 1 calc(50% - 4px);
-    width: 100%;
-    border-radius: 8px;
+  #next-lesson {
+    flex: 2 1 120px;
+    font-size: 0.85rem;
+    padding: 8px 12px;
     height: 40px;
+    justify-content: center;
+  }
+  
+  .btn-icon {
+    flex: 1 1 50px;
+    width: auto !important;
+    height: 40px !important;
+    border-radius: 8px !important;
+    padding: 0 12px;
   }
 
   /* Painel de Estatísticas */
