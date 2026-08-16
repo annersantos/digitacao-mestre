@@ -712,6 +712,173 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  /* Layout do Header */
+  .app-header {
+    padding: 12px;
+    gap: 12px;
+  }
+  
+  .logo-section h1 {
+    font-size: 1.4rem;
+  }
+  
+  .header-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .selector-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .custom-select {
+    flex-grow: 1;
+    width: auto;
+  }
+  
+  #restart-lesson, #next-lesson {
+    flex: 1 1 calc(50% - 4px);
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+  
+  #toggle-sound, #toggle-theme {
+    flex: 1 1 calc(50% - 4px);
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+  }
+
+  /* Painel de Estatísticas */
+  .stats-panel {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .stat-card {
+    padding: 12px 8px;
+  }
+  
+  .stat-value {
+    font-size: 1.4rem;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
+  }
+
+  /* Workspace de Digitação */
+  .instructions-bubble {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+  
+  .text-display-card {
+    padding: 16px;
+  }
+  
+  .text-display-content {
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
+
+  /* Guia de Mãos - Reordenado e Compacto */
+  .guide-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .hands-visualizer {
+    order: -1; /* Mãos no topo */
+    gap: 16px;
+    padding: 8px 16px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .hands-visualizer svg {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .divider {
+    height: 60px;
+  }
+  
+  .finger-legend {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .legend-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+  
+  .legend-right {
+    text-align: left;
+  }
+  
+  .legend-right h3 {
+    text-align: left;
+  }
+  
+  .legend-right .legend-item {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  /* Teclado Virtual Fluído */
+  .keyboard-section {
+    padding: 12px 8px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .keyboard {
+    min-width: unset; /* Encolhe para caber na tela */
+    gap: 4px;
+  }
+  
+  .keyboard-row {
+    gap: 4px;
+  }
+  
+  .key {
+    height: 28px;
+    font-size: 0.65rem;
+    border-radius: 4px;
+    border-bottom-width: 2px;
+    box-shadow: 0 1px 0 var(--border-color);
+  }
+  
+  .key-home .bump {
+    bottom: 3px;
+    font-size: 0.5rem;
+  }
+  
+  /* Ajustes Gerais para Celulares */
+  .history-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .history-stats {
+    justify-content: space-between;
+  }
+}
+
 /* ==========================================================================
    11. Modal e Certificado de Excelência
    ========================================================================== */
