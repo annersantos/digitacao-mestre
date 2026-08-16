@@ -701,8 +701,20 @@ body {
   }
   
   .header-controls {
-    flex-direction: column;
-    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .selector-wrapper {
+    width: 100%;
+  }
+
+  .custom-select {
+    width: 100%;
   }
   
   .keyboard-section {
@@ -750,46 +762,19 @@ body {
   
   .header-controls {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
     width: 100%;
+    justify-content: flex-start;
   }
   
   .selector-wrapper {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
   }
   
   .custom-select {
-    flex-grow: 1;
-    width: auto;
-  }
-  
-  #restart-lesson {
-    flex: 2 1 120px;
-    font-size: 0.85rem;
-    padding: 8px 12px;
-    height: 40px;
-    justify-content: center;
-  }
-  
-  #next-lesson {
-    flex: 2 1 120px;
-    font-size: 0.85rem;
-    padding: 8px 12px;
-    height: 40px;
-    justify-content: center;
-  }
-  
-  .btn-icon {
-    flex: 1 1 50px;
-    width: auto !important;
-    height: 40px !important;
-    border-radius: 8px !important;
-    padding: 0 12px;
+    width: 100%;
   }
 
   /* Painel de Estatísticas */
